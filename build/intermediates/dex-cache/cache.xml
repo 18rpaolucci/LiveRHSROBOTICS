@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Robotics\Edited\FtcRobotController\build\intermediates\exploded-aar\ModernRobotics-release\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f71d91f91744fdbed74e2bf39f91268d1580cefc">
+        <dex dex="C:\Robotics\Edited\FtcRobotController\build\intermediates\pre-dexed\debug\classes-55d07495ed36faf2d367b2a658b49698b3fa5381.jar" />
+    </item>
+    <item
+        jar="C:\Robotics\Edited\FtcRobotController\build\intermediates\exploded-aar\Analytics-release\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="23c74caa2b901107adc4d0aec343c5b8e8be86fb">
+        <dex dex="C:\Robotics\Edited\FtcRobotController\build\intermediates\pre-dexed\debug\classes-62c68820bb08635ad5cec02c15c7397125b5dedb.jar" />
+    </item>
+    <item
+        jar="C:\Robotics\Edited\FtcRobotController\build\intermediates\exploded-aar\WirelessP2p-release\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ebf8372b5bc9dc9f596ed438df36481099d51c41">
+        <dex dex="C:\Robotics\Edited\FtcRobotController\build\intermediates\pre-dexed\debug\classes-e02e0bd8a23114b50b1cb9cd74a60965098a5819.jar" />
+    </item>
+    <item
+        jar="C:\Robotics\Edited\FtcRobotController\build\intermediates\exploded-aar\Hardware-release\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="16efc4540aa5ac1cce5fde6c57edc09f5bc12e92">
+        <dex dex="C:\Robotics\Edited\FtcRobotController\build\intermediates\pre-dexed\debug\classes-9e65c9b233c94160adbf0cb30af8face80ac2d3e.jar" />
+    </item>
+    <item
+        jar="C:\Robotics\Edited\FtcRobotController\build\intermediates\exploded-aar\RobotCore-release\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a5fadb0dbb392372142275356999752343e21148">
+        <dex dex="C:\Robotics\Edited\FtcRobotController\build\intermediates\pre-dexed\debug\classes-0ac626bd77c9820e1954a9a0c7ee318d4db43c1e.jar" />
+    </item>
+    <item
+        jar="C:\Robotics\Edited\FtcRobotController\build\intermediates\exploded-aar\FtcCommon-release\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="37738feb62fd1abd7395899609373e990483750f">
+        <dex dex="C:\Robotics\Edited\FtcRobotController\build\intermediates\pre-dexed\debug\classes-dd0dd711991e4962261980769e992158293b9d0d.jar" />
+    </item>
+
+</items>
