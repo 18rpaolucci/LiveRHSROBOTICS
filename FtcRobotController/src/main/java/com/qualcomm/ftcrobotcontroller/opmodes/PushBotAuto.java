@@ -1,5 +1,8 @@
 package com.qualcomm.ftcrobotcontroller.opmodes;
 // PushBotAuto
+
+import customfunctions.Timer;
+
 /**
  * Hill attempt: turns to the right
  * @author Dunter Hevlin
@@ -38,6 +41,9 @@ public class PushBotAuto extends PushBotTelemetry {
      * The system calls this member repeatedly while the OpMode is running.
      */
     @Override public void loop () {
+
+        set_drive_power(1.0F, 1.0F);
+        new Timer(5);
 
         switch (v_state) {
             case 0:
