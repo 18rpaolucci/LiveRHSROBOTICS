@@ -42,9 +42,15 @@ public class PushBotAuto extends PushBotTelemetry {
      */
     @Override public void loop () {
 
+        //f, l, f, r, f,
         set_drive_power(1.0F, 1.0F);
-        new Timer(5);
+        new Timer(null);
+        set_drive_power(null, null);
+        new Timer(null);
+        set_drive_power(null, null);
+        new Timer(null);
 
+/*
         switch (v_state) {
             case 0:
                 reset_drive_encoders ();
@@ -104,6 +110,7 @@ public class PushBotAuto extends PushBotTelemetry {
 
         update_telemetry (); // Update common telemetry
         telemetry.addData ("18", "State: " + v_state);
+        */
     } // loop
 
     //--------------------------------------------------------------------------
