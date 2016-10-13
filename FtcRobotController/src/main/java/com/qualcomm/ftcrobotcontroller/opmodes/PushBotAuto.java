@@ -44,12 +44,21 @@ public class PushBotAuto extends PushBotTelemetry {
 
         //f, l, f, r, f,
         set_drive_power(1.0F, 1.0F);
-        new Timer(null);
-        set_drive_power(null, null);
-        new Timer(null);
-        set_drive_power(null, null);
-        new Timer(null);
-
+        new Timer(2000);
+        set_drive_power(1.0F, -1.0F);
+        new Timer(200);
+        set_drive_power(1.0F, 1.0F);
+        new Timer(1000);
+        set_drive_power(-1.0F, -1.0F);
+        new Timer(1000);
+        set_drive_power(-1.0F, 1.0F);
+        new Timer(200);
+        set_drive_power(1.0F, 1.0F);
+        new Timer(2000);
+        set_drive_power(-1.0F, 1.0F);
+        new Timer(200);
+        set_drive_power(1.0F, 1.0F);
+        new Timer(1000);
 /*
         switch (v_state) {
             case 0:
