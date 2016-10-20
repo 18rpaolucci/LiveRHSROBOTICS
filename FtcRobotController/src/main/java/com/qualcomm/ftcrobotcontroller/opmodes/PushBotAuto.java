@@ -8,17 +8,26 @@ import customfunctions.Timer;
  * @author Dunter Hevlin
  * @version 404
  */
-public class PushBotAuto extends PushBotTelemetry {
+public class PushBotAuto extends PushBotTelemetry implements Runnable{
     /**
      * Construct the class.
      *
      * The system calls this member when the class is instantiated.
      */
+    private float x;
+    private float y;
+    private boolean isActiveFlag;
+
     public PushBotAuto () {
         // Initialize base classes.
         // All via self-construction.
         // Initialize class members.
         // All via self-construction.
+    }
+    public PushBotAuto(float x, float y){
+        this.x = x;
+        this.y = y;
+        this.start();
     }
     // start
     /**
@@ -43,22 +52,15 @@ public class PushBotAuto extends PushBotTelemetry {
     @Override public void loop () {
 
         //f, l, f, r, f,
-        set_drive_power(1.0F, 1.0F);
-        new Timer(2000);
-        set_drive_power(1.0F, -1.0F);
-        new Timer(200);
-        set_drive_power(1.0F, 1.0F);
-        new Timer(1000);
-        set_drive_power(-1.0F, -1.0F);
-        new Timer(1000);
-        set_drive_power(-1.0F, 1.0F);
-        new Timer(200);
-        set_drive_power(1.0F, 1.0F);
-        new Timer(2000);
-        set_drive_power(-1.0F, 1.0F);
-        new Timer(200);
-        set_drive_power(1.0F, 1.0F);
-        new Timer(1000);
+        try{
+            //new instantiation of the thread
+            isActiveFlag = true;
+            new PushBotAuto(1.0F, 1.0F);
+            Thread.sleep(1000);
+            isActiveFlag = false;//- breaks the loop of the thread -
+        }catch(InterruptedException ie){
+            ie.printStackTrace();
+        }
 /*
         switch (v_state) {
             case 0:
@@ -134,4 +136,10 @@ public class PushBotAuto extends PushBotTelemetry {
      * a state machine for the loop method.
      */
     private int v_state = 0;
+
+    @Override
+    public void run() {
+        while(isActiveFlag)
+        set_drive_power(this.x, this.y);
+    }
 } // PushBotAuto
