@@ -1,0 +1,4 @@
+#Wed Oct 26 15:54:59 EDT 2016
+base.0=C\:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\transforms\\dex\\release\\folders\\1000\\1f\\main\\classes.dex

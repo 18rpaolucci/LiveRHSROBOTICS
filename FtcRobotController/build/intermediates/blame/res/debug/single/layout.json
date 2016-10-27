@@ -20,24 +20,24 @@
         "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\motors.xml"
     },
     {
-        "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\matrices.xml",
-        "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\matrices.xml"
-    },
-    {
         "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\analog_inputs.xml",
         "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\analog_inputs.xml"
+    },
+    {
+        "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\matrices.xml",
+        "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\matrices.xml"
     },
     {
         "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\pwms.xml",
         "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\pwms.xml"
     },
     {
-        "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\activity_autoconfigure.xml",
-        "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\activity_autoconfigure.xml"
-    },
-    {
         "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\digital_device.xml",
         "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\digital_device.xml"
+    },
+    {
+        "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\activity_autoconfigure.xml",
+        "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\activity_autoconfigure.xml"
     },
     {
         "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\analog_input_device.xml",
@@ -76,12 +76,12 @@
         "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\analog_output_device.xml"
     },
     {
-        "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\device_interface_module.xml",
-        "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\device_interface_module.xml"
-    },
-    {
         "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\info_button.xml",
         "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\info_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\device_interface_module.xml",
+        "source": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\exploded-aar\\FtcCommon-release\\res\\layout\\device_interface_module.xml"
     },
     {
         "merged": "C:\\Users\\cad1\\Documents\\GitHub\\LiveRHSROBOTICS\\FtcRobotController\\build\\intermediates\\res\\merged\\debug\\layout\\activity_ftc_wifi_channel_selector.xml",

@@ -1,6 +1,8 @@
 package com.qualcomm.ftcrobotcontroller.opmodes;
 // PushBotAuto
 
+import com.qualcomm.robotcore.robocol.Telemetry;
+
 import customfunctions.Timer;
 
 /**
@@ -50,18 +52,21 @@ public class PushBotAuto extends PushBotTelemetry implements Runnable{
      * The system calls this member repeatedly while the OpMode is running.
      */
     @Override public void loop () {
-
-        //f, l, f, r, f,
-        try{
+       /* try{
             //new instantiation of the thread
             isActiveFlag = true;
             new PushBotAuto(1.0F, 1.0F);
             Thread.sleep(1000);
             isActiveFlag = false;//- breaks the loop of the thread -
+            Thread.sleep(1);
+            isActiveFlag = true;
+            new PushBotAuto(0F, 1.0F);
+            Thread.sleep(1000);
+            isActiveFlag = false;//- breaks the loop of the thread -
         }catch(InterruptedException ie){
             ie.printStackTrace();
-        }
-/*
+        }*/
+        //f, l, f, r, f,
         switch (v_state) {
             case 0:
                 reset_drive_encoders ();
@@ -69,12 +74,13 @@ public class PushBotAuto extends PushBotTelemetry implements Runnable{
 
             case 1:
                 run_using_encoders ();
-                Thread thread = new Thread();
                 try {
-                    thread.sleep(1000L);
+                    Thread.sleep(1000L);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                update_telemetry (); // Update common telemetry
+                telemetry.addData ("00", "I1 - FTCLOOPCASE1 -- State: " + v_state);
                 set_drive_power (1.0f, 1.0f);
                 if (have_drive_encoders_reached (5000, 5000)) {
                     reset_drive_encoders();
@@ -121,7 +127,7 @@ public class PushBotAuto extends PushBotTelemetry implements Runnable{
 
         update_telemetry (); // Update common telemetry
         telemetry.addData ("18", "State: " + v_state);
-        */
+
     } // loop
 
     //--------------------------------------------------------------------------
