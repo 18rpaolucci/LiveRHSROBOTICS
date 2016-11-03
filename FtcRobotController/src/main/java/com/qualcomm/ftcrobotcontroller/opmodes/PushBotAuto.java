@@ -16,6 +16,7 @@ public class PushBotAuto extends PushBotTelemetry implements Runnable{
      *
      * The system calls this member when the class is instantiated.
      */
+    int timer;
     private float x;
     private float y;
     private boolean isActiveFlag;
@@ -67,67 +68,47 @@ public class PushBotAuto extends PushBotTelemetry implements Runnable{
             ie.printStackTrace();
         }*/
         //f, l, f, r, f,
-        switch (v_state) {
-            case 0:
-                reset_drive_encoders ();
-                v_state++;
-
-            case 1:
-                run_using_encoders ();
-                try {
-                    Thread.sleep(1000L);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                update_telemetry (); // Update common telemetry
-                telemetry.addData ("00", "I1 - FTCLOOPCASE1 -- State: " + v_state);
-                set_drive_power (1.0f, 1.0f);
-                if (have_drive_encoders_reached (5000, 5000)) {
+        try {
+            switch (v_state) {
+                case 0:
                     reset_drive_encoders();
-                    set_drive_power (0.0f, 0.0f);
                     v_state++;
-                } break;
 
-            case 2:
-                if (have_drive_encoders_reset ()) {
+                case 1:
+                    run_using_encoders();
+                    try {
+                        Thread.sleep(1000L);
+                        telemetry.addData("2017", "Post Thread");
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    update_telemetry(); // Update common telemetry
+                    telemetry.addData("2016", "Post T/C");
+                    set_drive_power(1.0f, 1.0f);
+                    timer=2000;
                     v_state++;
-                } break;
-
-            case 3:
-                run_using_encoders ();
-                set_drive_power (1.0f, -1.0f);
-                if (have_drive_encoders_reached (5000, 5000)) {
-                    reset_drive_encoders ();
-                    set_drive_power (0.0f, 0.0f);
+                    break;
+                case 2:
+                    set_drive_power(1.0F, -1.0F);
+                    timer=500;
                     v_state++;
-                } break;
-
-            case 4:
-                if (have_drive_encoders_reset ()) {
+                    break;
+                case 3:
+                    set_drive_power(1.0f, 1.0f);
+                    timer=3000;
                     v_state++;
-                } break;
-
-            case 5:
-                run_using_encoders ();
-                set_drive_power (1.0f, 1.0f);
-                if (have_drive_encoders_reached (10000, 10000)) {
-                    reset_drive_encoders ();
-                    set_drive_power (0.0f, 0.0f);
-                    v_state++;
-                } break;
-
-            case 6:
-                if (have_drive_encoders_reset ()) {
-                    v_state++;
-                } break;
-
-            default:
-                break;
-        } // switch
-
-        update_telemetry (); // Update common telemetry
-        telemetry.addData ("18", "State: " + v_state);
-
+                    break;
+                case 4:
+                    set_drive_power(0f, 0f);
+                default:
+                    break;
+            } // switch
+            update_telemetry (); // Update common telemetry
+            telemetry.addData ("18", "State: " + v_state);
+                Thread.sleep(timer);
+        }catch(InterruptedException e){
+            e.printStackTrace();
+        }
     } // loop
 
     //--------------------------------------------------------------------------
