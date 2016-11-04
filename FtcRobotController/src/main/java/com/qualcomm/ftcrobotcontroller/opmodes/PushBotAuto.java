@@ -89,7 +89,7 @@ public class PushBotAuto extends PushBotTelemetry implements Runnable{
                     v_state++;
                     break;
                 case 2:
-                    set_drive_power(1.0F, -1.0F);
+                    set_drive_power(.5F, -.5F);
                     timer=500;
                     v_state++;
                     break;
